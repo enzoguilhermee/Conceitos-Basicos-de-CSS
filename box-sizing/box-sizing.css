@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+}
+
+p{
+    width: 500px;
+    background-color: #ccc;
+}
+
+.destaque{
+    background-color: rgb(47, 90, 197);
+    margin-bottom: -15px;
+    font-weight: 700;
+}
+
+
+.p1{
+    padding: 25px;
+}
+
+.p2{
+    padding: 25px;
+    border: 10px solid green;
+}
+
+.p3{
+    padding: 25px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+
+

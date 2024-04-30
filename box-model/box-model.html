@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Básicos no CSS</title>
+    <link rel="stylesheet" href="box-model.css">
+</head>
+<body>
+    <h1>BOX MODEL</h1>
+
+    <div id="imagem-box">
+        <img src="img/Margin, Border, Padding.png" alt="Exemplo de box model">
+    </div>
+    
+
+    <h2>WIDTH & HEIGHT</h2>
+
+    <p>Width significa largura e define a largura do parágrafo, enquanto height significa altura e define a altura do seu parágrafo.</p>
+    <p class="destaque size">Observe um exemplo prático nesse destaque laranja, onde temos width de 50% e height de 100px. Observe que o laranja sempre ocupa metade do corpo da página, por conta que está definida em 50%, enquanto a altura permanece de 100px.</p>
+    <p>width: 50%; <br>height: 100px;</p>
+
+
+    <!-- separando -->
+
+
+    <h2>PADDING</h2>
+
+    <p>Padding significa preenchimento, basicamente é a definição do espaçamento da borda pra "dentro".</p>
+    <p class="destaque padding">Observe que aqui, existe padding de 26px, ou seja, um espaço de 26px dos limites do espaço laranja até esse texto.</p>
+    <p>padding: 26px;</p>
+
+
+    <!-- separando -->
+
+
+    <h2>MARGIN</h2>
+
+    <p>Margin signifca margem, basicamente é a definição do espaçamento da borda pra fora. Como se fosse o "inverso" do padding.</p>
+    <p class="destaque margin">Nesse exemplo prático, existe um margin. Ou seja, existe um espaço da borda pra fora de 50px em cima, 0 na direita, 20px em baixo e 100px na esquerda</p>
+    <p>Obverse como da borda pra fora na esquerda tem um espaçamento maior, pois está definido em 100px enquanto a da direita é 0, pois está definido em 0 px.</p>
+    <p>margin: 50px 0 20px 100px; <br>margin: cima, direita, baixo, esquerda;</p>
+
+
+    <!-- separando -->
+
+
+    <h2>BORDER</h2>
+
+    <p>Border significa borda. Basicamente definimos 3 propriedades para a borda. A espessura (largura), o estilo e a cor.</p>
+    <p class="destaque border">Observe que nesse exemplo prático temos uma borda com espessura de 5px, o estilo é pontilhado e a cor é preta.</p>
+    <p> border-width: 5px; <br>border-style: dotted; <br>border-color: black; <br> <br>Ou seja: <br>largura: 5px; <br>estilo: dotted; (pontilhado) <br>cor: black; </p>
+    <p>Lembrando que eu posso trabalhar com o estilo da borda separadamente, como por exemplo:</p>
+    <p class="destaque border-separado">Observe que aqui é aplicado estilos de bordas, cores e tamanhos diferentes para cada lado da borda individualmente. Não necessariamente para os 4 lados da borda como um todo, mas cada lado específico possui uma propriedade.</p>
+    <p> border-top:10px dotted red;<br>
+        border-right: 25px solid green;<br>
+        border-bottom: 20px dashed blue;<br>
+        border-left: 25px groove yellow;<br>
+        Observe que existe uma ordem de largura, estilo e cor da borda.</p>
+
+
+
+    <!-- separando -->  
+
+
+
+    <h2>OUTLINE</h2>
+
+    <p>Outline significa contorno. É bastante semelhante com a borda e também definimos 3 propriedades: A espessura (largura), o estilo e a cor.</p>
+    <p class="destaque outline">Nesse exemplo prático de início podemos não perceber a diferença entre outline e border, mas outline aplica uma definição para fora do limite da caixa laranja, enquanto o border aplica a mesma coisa, só que dentro.</p>
+    <p>outline: 5px solid rgba(0, 0, 255, 0.5);</p>
+
+    <p>Observe a diferença abaixo entre border e outline com as mesmas aplicações de: 5px solid blue;</p>
+
+    <p class="destaque outline">Aqui estamos aplicando o outline.</p>
+    <p class="destaque borda2">Aqui estamos aplicando o border.</p>
+    <p class=" destaque outline borda2">Aqui estamos aplicado o outline e o border ao mesmo tempo.</p>
+
+    <p>Os dois possuem a mesma configuração de: 5px solid rgba(0, 0, 255, 0.5)<br>Porém o outline continua azul pois se mistura com o branco que é do limite da borda pra fora. <br>Já o border fica nessa cor meio roxa por conta que se mistura com o laranja, que é do limite da borda pra dentro.</p>
+</body>
+</html>

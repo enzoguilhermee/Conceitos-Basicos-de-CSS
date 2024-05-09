@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+
+h1{
+    border: 2px solid red;
+}
+
+
+p {
+    width: 50%;
+    background-color: aliceblue;
+}
+
+a{
+    background-color: yellow;
+}
+
+strong{
+    padding: 25px;
+    background-color: red;
+}
+
+.strong1{
+    padding: 25px;
+    background-color: red;
+    display: block;
+}
+
+.strong2{
+    padding: 25px;
+    background-color: red;
+    display: inline-block;
+    height: 60px;
+    width: 50%;
+}
+.strong3{
+    padding: 25px;
+    background-color: red;
+    display: inline-block;
+    height: 60px;
+    width: 50%;
+    visibility: hidden;
+}

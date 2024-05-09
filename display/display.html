@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+    <h1>Box Sizing</h1>
+
+
+    <p>Quebre a página para visualizar melhor os experimentos com cada elemento! Tente reduzir e aumentar a largura da página e observe como cada elemento se comporta.</p>
+    <p>Ao lado temos um exemplo de link com a href -> <a href="display.html">Box Model arquivo html</a>. <br><b>Aqui temos um texto em negrito com &lt;b&gt;.</b><br><strong>Aqui temos um texto em negrito com strong que é um elemento de linha</strong><br><em>Aqui temos um texto em itálico com em</em><br><i>Aqui temos um texto em itálico com i</i></p>
+    <p>Observe como fica o strong de vermelho ao aplicarmos um padding: 25px; e background-color: red;</p>
+    <p>Ou seja, não se aplica propriedades do box-model em elementos que são em linha. Olha o que aconteceu no strong que é um elemento em linha, por exemplo.</p>
+
+
+
+
+    <p>Ao lado temos um exemplo de link com a href -> <a href="display.html">Box Model arquivo html</a>. <br><b>Aqui temos um texto em negrito com &lt;b&gt;.</b><br><strong class="strong1">Aqui temos um texto em negrito com strong agora transformado pra um elemento em bloco</strong><br><em>Aqui temos um texto em itálico com em</em><br><i>Aqui temos um texto em itálico com i</i></p>
+    <p>Agora observe o que aconteceu nesse strong acima. Ao aplicarmos um display: block; nós transformamos ele que é um elemento de linha em um elemento de bloco, e aí as propriedades do box-model passaram a ser válidas nele. Nesse caso está ocupando 50% do parágrafo.</p>
+
+
+
+
+
+    <p>Ao lado temos um exemplo de link com a href -> <a href="display.html">Box Model arquivo html</a>. <br><b>Aqui temos um texto em negrito com &lt;b&gt;.</b><br><strong class="strong2">Aqui temos um texto em negrito com strong agora transformado pra um elemento em linha e em bloco.</strong><br><em>Aqui temos um texto em itálico com em</em><br><i>Aqui temos um texto em itálico com i</i></p>
+    <p>Agora observe que é permitido aplicar propriedades do box-model, como margin, padding, etc.. Mas o conteúdo vai permanecer como elemento de linha. Aí está aplicado uma altura de 60px e uma largura de 50%. Ou seja, aceitou as propriedades do box-model mas continua sendo um elemento de linha também.</p>
+
+
+
+    <p>Ao lado temos um exemplo de link com a href -> <a href="display.html">Box Model arquivo html</a>. <br><b>Aqui temos um texto em negrito com &lt;b&gt;.</b><br><strong class="strong3">Aqui temos um texto em negrito com strong agora transformado pra um elemento em linha e em bloco.</strong><br><em>Aqui temos um texto em itálico com em</em><br><i>Aqui temos um texto em itálico com i</i></p>
+    <p>Aqui temos todas as mesmas propriedades aplicadas, só que com o visibility: hidden; Onde o conteúdo sai da tela mas o espaço que ele ocupa continua reservado para ele. Diferente do display:none; que realmente exclui o espaço do elemento também.</p>
+
+
+
+</body>
+</html>

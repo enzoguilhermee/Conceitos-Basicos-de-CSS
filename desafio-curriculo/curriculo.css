@@ -32,3 +32,29 @@ span{
     color: blue;
 }
 
+.menu{
+    text-align: center;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    background-color: #c3c0c0;
+}
+
+
+.menu li:hover{
+    background-color: #7dafe0;
+    transition: .4s;
+}
+
+.menu a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px;
+    color: rgb(10, 44, 124);
+    font-weight: 700;
+}
+
+
